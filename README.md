@@ -62,7 +62,7 @@ The Jenkins server can be acessed directly at http://0.0.0.0:8080. It was config
 
 # Any other settings..
 
-You can check any other containers and app settings checking the `docker-compose.yml` file, the `Dockerfile` inside the subfolders and any other comment inside the apps config files and scripts.
+You can check any other containers and app settings inside the `docker-compose.yml` file, the `Dockerfile` inside the subfolders and any other comment inside the apps config files and scripts.
 
 # License
 
