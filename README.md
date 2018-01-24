@@ -66,7 +66,7 @@ You can check any other containers and app settings checking the `docker-compose
 
 # License
 
-It is licensed under Apache License 2.0 you can check a copy of the license in this git repository or see the footnote below.
+It is licensed under Apache License 2.0. You can check a copy of the license in this git repository or see the footnote below.
 
 Copyright 2018 Adilson dos Santos Dantas
 
