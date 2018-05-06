@@ -38,7 +38,7 @@ services:
     image: "redis:latest"
   logstash:
     build: './logstash'
-    image: "docker.elastic.co/logstash/logstash:6.1.2"
+    image: "docker.elastic.co/logstash/logstash:6.2.4"
     depends_on:
       - elasticsearch
       - web_01
@@ -46,7 +46,7 @@ services:
     volumes:
       - web_logs:/var/log/apache2
   elasticsearch:
-    image: "docker.elastic.co/elasticsearch/elasticsearch:6.1.2"
+    image: "docker.elastic.co/elasticsearch/elasticsearch:6.2.4"
     environment:
       - cluster.name=elastic-docker
       - bootstrap.memory_lock=true
@@ -58,7 +58,7 @@ services:
     volumes:
       - elasticdata:/usr/share/elasticsearch/data
   kibana:
-    image: "docker.elastic.co/kibana/kibana:6.1.2"
+    image: "docker.elastic.co/kibana/kibana:6.2.4"
     environment:
       SERVER_NAME: kibana
       ELASTICSEARCH_URL: http://elasticsearch:9200
